@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+  color: #333;
+  background-color: #f6f6f6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.image-gallery-image {
+  width: auto !important;
+}
+
+.productGallery211 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  margin-left: 24px;
+  transition: all 0.5s;
+}
+
+.productGallery212 {
+  align-items: center;
+  cursor: zoom-in;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  margin-bottom: 16px;
+}
+
+.productGallery214 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.productGallery213::after {
+  display: block;
+  content: "";
+  width: 3px;
+  position: absolute;
+  left: -24px;
+  top: 0;
+  background-color: #fc7b08;
+  height: 100%;
+}
+
+.productGallery210 {
+  height: 500px;
+  position: relative;
+}
+
+.productPreviewWrapper {
+  height: 500px;
+  overflow: hidden;
+}
+
+.productGallery2 {
+  display: flex;
+  flex-direction: row;
+  flex: 2 0 auto;
+}
+
+.productGallery220 {
+  display: flex;
+  justify-content: center;
+  flex: 2 0 auto;
+}
+
+.productGalleryUp,
+.productGalleryDown {
+  position: absolute;
+  left: 24px;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s;
+  outline: none;
+  border-radius: 50%;
+}
+
+.productGalleryUp {
+  top: 0;
+}
+.productGalleryDown {
+  bottom: 0;
+}
+
+.iconupdown {
+  font-size: 25px;
+}
+
+/* .myNodeEnter {
+    opacity: 0;
+  }
+  .myNodeEnterActive {
+    opacity: 1;
+    transition: opacity 400ms;
+  }
+  .myNodeExit {
+    opacity: 1;
+  }
+  .myNodeExitActive {
+    opacity: 0;
+    transition: opacity 400ms;
+  } */
+
+.largeImageVisible {
+  transition: opacity 0.3s;
+}
+.largeImageInvisible {
+  opacity: 0;
+}

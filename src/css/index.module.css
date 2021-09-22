@@ -1,0 +1,12 @@
+.productGallery1 {
+  display: flex;
+  max-width: 1180px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.productGallery3 {
+    display: flex;
+    flex: 0 0 530px;
+  }
