@@ -22,21 +22,30 @@ export default function Productlist() {
     getCities(db).then((documents) => setItems(documents));
   }, []);
 
+  useEffect(() => {
+    console.log(items);
+  }, [items]);
+
   return (
     <>
-    <div className={css.productList}>
-      {items.map((el) => {
-        return (
-          <>
-            
+      <div className={css.productList}>
+        {items.map((el) => {
+          return (
+            <>
               <div className={css.product}>
                 <div className={css.productImage}>
                   <ThumbImage image={el.id} />
                 </div>
+                <div className={css.productInfo}>
+                  {el.fast_search} [{el.fast_spec}]
+                </div>
+                <div className={css.productPrice}>
+                  <div className={css.productPriceActive}>{el.price}</div>
+                </div>
               </div>
-          </>
-        );
-      })}
+            </>
+          );
+        })}
       </div>
     </>
   );
